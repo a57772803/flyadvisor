@@ -178,13 +178,11 @@
       //if ($(window).width() > 992) {
         $(window).scroll(function () {
           if ($(this).scrollTop() > 80) {
-            $('#navbar_top').removeClass("nav-color");
-            $('#navbar_top').addClass("fixed-top bg-transparent");
+            $('#navbar_top').addClass("fixed-top");
             // add padding top to show content behind navbar
             $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
           } else {
-            $('#navbar_top').removeClass("fixed-top bg-transparent");
-            $('#navbar_top').addClass("nav-color");
+            $('#navbar_top').removeClass("fixed-top");
             // remove padding top from body
             $('body').css('padding-top', '0');
           }

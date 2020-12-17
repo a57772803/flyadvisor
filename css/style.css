@@ -6,26 +6,28 @@
 .nav-color {
     background: linear-gradient(135deg, #009944 0%, #00B5D4 100%);
     opacity: 0.8;
-    z-index:2;
+    z-index: 2;
 }
 
 .news {
     background: linear-gradient(135deg, rgba(0, 153, 68, 0.1)0%, rgba(0, 181, 212, 0.1)100%);
 }
+
 .hero-image {
     height: 100vh;
-    background: url("../img/img_index-hero-d.png")50% no-repeat;;
+    background: url("../img/img_index-hero-d.png")50% no-repeat;
+    ;
     background-size: cover;
     text-align: center;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; 
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .hero-text {
@@ -36,6 +38,49 @@
     transform: translate(-50%, -50%);
     color: white;
     z-index: 0;
+}
+
+.service-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 32px;
+    color: rgba(100, 121, 110, 1);
+}
+
+.service-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    color: rgba(27, 65, 0, 1);
+    width: 200px;
+    height: 53px;
+    line-height: 53px;
+
+}
+
+.footer-text {
+    height: 32px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 32px;
+}
+
+.service-border {
+    border: 1px solid #64796E;
+}
+
+
+.text-topic {
+    height: 36px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+    color: #1B4100;
+
 }
 
 @media (max-width: 767px) {
@@ -78,10 +123,7 @@
     }
 }
 
-@media (min-width: 992px) {
-
-
-}
+@media (min-width: 992px) {}
 
 @media (min-width: 1200px) {
 
@@ -102,6 +144,7 @@
         text-align: center;
 
     }
+
     .hero-text {
         text-align: left;
         position: absolute;
@@ -111,51 +154,9 @@
         color: white;
     }
 
-
-    .text-topic {
-        height: 36px;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 36px;
-        color: #1B4100;
-
-    }
-
     .about-us {
         margin-top: -200px;
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
     }
 
-    .service-text {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 17px;
-        line-height: 32px;
-        color: rgba(100, 121, 110, 1);
-    }
-
-    .service-title {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 32px;
-        color: rgba(27, 65, 0, 1);
-        width: 200px;
-        height: 53px;
-        line-height: 53px;
-
-    }
-
-    .footer-text {
-        height: 32px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 32px;
-    }
-
-    .service-border {
-        border: 1px solid #64796E;
-    }
 }
