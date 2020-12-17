@@ -175,7 +175,7 @@
       crossorigin="anonymous"></script>
     <script>
       //navbar fixtop
-      if ($(window).width() > 992) {
+      //if ($(window).width() > 992) {
         $(window).scroll(function () {
           if ($(this).scrollTop() > 80) {
             $('#navbar_top').removeClass("nav-color");
@@ -189,13 +189,14 @@
             $('body').css('padding-top', '0');
           }
         });
-      }
+      //}
       //rwd hero
       $(".hero-image").css({ height: $(window).height() + "px" });
 
       $(window).on("resize", function () {
         $(".hero-image").css({ height: $(window).height() + "px" });
       });
+      $
     </script>
 </body>
 
