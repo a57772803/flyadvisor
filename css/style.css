@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
 * {
-    font-family: 'Noto Sans CJK TC;';
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+ul>li {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -30,15 +38,6 @@
     justify-content: center;
 }
 
-.hero-text {
-    text-align: left;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    color: white;
-    z-index: 0;
-}
 
 .service-text {
     font-style: normal;
@@ -60,6 +59,16 @@
 
 }
 
+.text-topic {
+    height: 36px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+    color: #1B4100;
+
+}
+
 .footer-text {
     height: 32px;
     font-style: normal;
@@ -73,53 +82,198 @@
 }
 
 
-.text-topic {
-    height: 36px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 36px;
-    color: #1B4100;
 
-}
 
 @media (max-width: 767px) {
+    .nav-text {
+        width: 100px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        /* identical to box height */
+    }
 
+    .hero-image {
+        height: 100vh;
+        background: url("../img/img_index-hero-m.png")50% no-repeat;
+        ;
+        background-size: cover;
+        text-align: center;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+        color: white;
+    }
+
+    .hero-text>h1 {
+        font-size: 40px;
+        width: 320px;
+        line-height: 59px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text>p {
+        font-size: 22px;
+        width: 320px;
+        line-height: 36px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .service-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 44px;
+        display: flex;
+        align-items: flex-end;
+
+    }
 
     .about-us {
-        margin-top: px;
+        margin-top: -40vh;
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
     }
+
 }
 
 @media (max-width: 480px) {
 
 
     .hero-text {
-        text-align: left;
         position: absolute;
-        top: 50%;
-        left: 60%;
+        top: 40%;
+        left: 50%;
         transform: translate(-50%, -50%);
+        text-align: left;
         color: white;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text>h1 {
+        font-size: 37px;
+        width: 300px;
+        line-height: 59px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text>p {
+        font-size: 20px;
+        width: 300px;
+        line-height: 36px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .service-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 44px;
+        display: flex;
+        align-items: flex-end;
+
+    }
+
+    .about-us {
+        margin-top: -45vh;
+        filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
     }
 }
 
 @media (min-width: 768px) {
-
+    .nav-text {
+        width: 100px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        /* identical to box height */
+    }
 
     .hero-text {
-        text-align: left;
         position: absolute;
-        top: 50%;
-        left: 40%;
+        top: 40%;
+        left: 50%;
         transform: translate(-50%, -50%);
+        text-align: left;
+        color: white;
+    }
+
+    .hero-text>h1 {
+        font-size: 59px;
+        line-height: 80px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text>p {
+        font-size: 24px;
+        width: 650px;
+        line-height: 36px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+
+    .nav-brand {
+        margin-left: 6vw;
+        margin-top: -2px;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;
         color: white;
     }
 
     .about-us {
-        margin-top: -300px;
+        margin-top: -50vh;
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+    }
+
+    .nav-icon {
+        margin-left: 3vw;
+        margin-right: 5vw;
+    }
+
+    a>img {
+        margin-right: 20px;
+    }
+
+    .align-right {
+        text-align: right;
     }
 }
 
@@ -128,16 +282,30 @@
 @media (min-width: 1200px) {
 
 
+    .hero-text {
+        position: absolute;
+        top: 40%;
+        left: 70%;
+        transform: translate(-60%, -50%);
+        text-align: left;
+        color: white;
+    }
 
-    .nav-text {
-        width: 100px;
+    .hero-text>h1 {
+        font-size: 59px;
+        line-height: 80px;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;
-        line-height: 30px;
-        /* identical to box height */
-        margin-right: 40px;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    }
 
+    .hero-text>p {
+        font-size: 24px;
+        width: 650px;
+        line-height: 36px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
     }
 
     .navbar .navbar-collapse {
@@ -145,17 +313,9 @@
 
     }
 
-    .hero-text {
-        text-align: left;
-        position: absolute;
-        top: 50%;
-        left: 30%;
-        transform: translate(-50%, -50%);
-        color: white;
-    }
 
     .about-us {
-        margin-top: -200px;
+        margin-top: -50vh;
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
     }
 
