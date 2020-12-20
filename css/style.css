@@ -4,6 +4,11 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+hr {
+    border-width: medium;
+    color: black;
+}
+
 
 ul>li {
     margin-left: auto;
@@ -21,22 +26,6 @@ ul>li {
     background: linear-gradient(135deg, rgba(0, 153, 68, 0.1)0%, rgba(0, 181, 212, 0.1)100%);
 }
 
-.hero-image {
-    height: 100vh;
-    background: url("../img/img_index-hero-d.png")50% no-repeat;
-    ;
-    background-size: cover;
-    text-align: center;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
 
 
 .service-text {
@@ -95,24 +84,6 @@ ul>li {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         /* identical to box height */
     }
-
-    .hero-image {
-        height: 100vh;
-        background: url("../img/img_index-hero-m.png")40% no-repeat;
-        ;
-        background-size: cover;
-        text-align: center;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
 
     .hero-text {
         position: absolute;
