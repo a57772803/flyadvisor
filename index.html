@@ -27,12 +27,18 @@
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item  my-auto"><a class="nav-link nav-text" href="">關於我們</a></li>
-            <li class="nav-item my-auto"><a class="nav-link  nav-text " href="">解決方案</a></li>
-            <li class="nav-item my-auto"><a class="nav-link nav-text " href="">最新消息</a></li>
+            <li class="nav-item my-auto"><a class="nav-link  nav-text " href="#service" onclick="off();">解決方案</a></li>
+            <li class="nav-item my-auto"><a class="nav-link nav-text" href="">最新消息</a></li>
             <li class="nav-item my-auto"><a class="nav-link nav-text" href="">模考評量</a></li>
-            <li class="nav-item  nav-icon my-auto">
-              <a href="https://www.facebook.com/ImflyAdvisorByiSIT/" class=""> <img src="./img/logo-fb.png" alt=""></a>
-              <a href="https://www.instagram.com/flyadvisor/" class=""><img src="./img/icon_Instagrams.png" alt=""></a>
+            <li class="nav-item my-auto" style="width:80px;">
+              <a href="https://www.facebook.com/ImflyAdvisorByiSIT/" class=" nav-fb"> <img src="./img/logo-fb.png"
+                  alt=""></a>
+              <a href="https://www.instagram.com/flyadvisor/" class="d-md-none d-xl-none d-lg-none"><img
+                  src="./img/icon_Instagrams.png" alt=""></a>
+            </li>
+            <li class="nav-item my-auto">
+              <a href="https://www.instagram.com/flyadvisor/" class="d-none d-md-block"><img
+                  src="./img/icon_Instagrams.png" alt=""></a>
             </li>
           </ul>
         </div> <!-- navbar-collapse.// -->
@@ -41,52 +47,57 @@
   </header>
   <div class="container-fluid">
     <div class="row">
-      <picture>
-        <source media="(min-width:768px)" srcset="./img/img_index-hero-d.png">
-          <img class="img-fluid w-100" src="./img/img_index-hero-m.png">
-      </picture>
-    <div class="col-md-12 hero-text">
-      <h1>你值得擁有更⾼、更完整的視野</h1>
-      <p>一趟成功執行的飛行任務，需要許多面向的整合，
-        包括法規、人才、系統等，讓整合臻於完美，便是我們的使命。</p>
-    </div>
-  </div>
-
-
-    <!---->
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-4 offset-lg-7 about-us">
-
+      <div class="col hero"></div>
+      <div class="col-md-12">
+        <h1>想飛，擁有更高、更完整的視野</h1>
+        <p>一趟成功的飛航任務，是諸多環節協同考量的成果。整合飛航活動程序、航機系統紀錄、營運管理資訊和人才專業素養，提升執行效率。</p>
       </div>
+      <div id="overlay">
+      </div>
+    </div>
+
+
+    <!---->
+    <div class="flex-row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-11 d-flex justify-content-sm-center justify-content-md-end" id="#aboutus">
+        <div class="about-us">
+        <h2 class="service-title mx-auto mt-5">無人機應用專業顧問</h2>
+        <p class="service-text mx-auto">為你解惑無人機在商業應用上的疑難雜症。</p>
+        <p class="service-text mx-auto mb-5">
+          我們相信兼顧良好管理、智慧應用與人才培訓，除了能提升飛行任務效率、降低成本與風險，更能影響公共政策的與時俱進，加速產業發展進程，這是我們所有解決方案的共同目標。</p>
+        </div>
+        </div>
       <div class="col-lg-1"></div>
     </div>
     <!---->
     <div class="row">
       <div class="col-lg-1"></div>
-      <div class="col-10">
+      <div class="col-12 col-lg-10">
         <div class="row">
-          <div class="col-12 col-lg-12 service-title mt-5 mb-5">產品&服務</div>
+          <div class="col-12 col-lg-12 service-title mt-5 mb-5" id="service">產品&服務</div>
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <img src="./img/icon_index_service1.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-topic">飛航營運管理</h5>
-              <p class="card-text service-text">flyAdvisor 提供無人機飛航任務執行資料、流程與 管理服務，提升飛航安全與可靠性。</p>
+            <div class="card-body mx-auto" style="max-width: 400px;">
+              <img class="mb-3" src="./img/icon_index_service1.png" alt="Card image cap">
+              <h5 class="card-title text-topic" style="max-width: 320px;">飛航營運管理</h5>
+              <p class="card-text service-text" style="max-width: 320px;">flyAdvisor
+                提供無人機飛航任務執行資料、流程與管理服務，讓空域運用、協同合作更加安全可靠。</p>
               <hr>
             </div>
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <img src="./img/icon_index_service2.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-topic">航空人才訓練</h5>
-              <p class="card-text service-text">flyAdvisor 培育無人機應用專業人才，茁壯飛航安全與無人機產業發展根基。</p>
-             <hr>
+            <div class="card-body mx-auto" style="max-width: 400px;">
+              <img class="mb-3" src="./img/icon_index_service2.png" alt="Card image cap">
+              <h5 class="card-title text-topic" style="max-width: 320px;">航空人才訓練</h5>
+              <p class="card-text service-text" style="max-width: 320px;">flyAdvisor 培育無人機應用專業人才，茁壯飛航安全與無人機產業發展根基。</p>
+              <hr>
             </div>
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <img src="./img/icon_index_service3.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-topic">無人機智慧應用</h5>
-              <p class="card-text service-text ">flyAdvisor 應用 5G/AI 等新興資通訊技術，在無人機智慧化應用產業發展拓墣中貢獻所長。</p>
+            <div class="card-body mx-auto" style="max-width: 400px;">
+              <img class="mb-3" src="./img/icon_index_service3.png" alt="Card image cap">
+              <h5 class="card-title text-topic" style="max-width: 320px;">無人機智慧應用</h5>
+              <p class="card-text service-text " style="max-width: 320px;">flyAdvisor 應用 5G/AI
+                等新興資通訊技術，提供無人機智慧化應用軟硬體整合解決方案與顧問服務。</p>
               <hr>
             </div>
 
@@ -110,29 +121,35 @@
     <div class="row news">
       <div class="col-12 text-center service-title mb-5">最新消息</div>
       <div class="col-lg-1"></div>
-      <div class="col-10">
+      <div class="col-12 col-lg-10">
         <div class="row">
 
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <img class="img-fluid" src="./img/img_index_news01.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-topic">無人機外送到你家</h5>
-              <p class="card-text service-text">為了讓物流運輸更具效率，無人載具的物流運 輸路網立體化已開始逐步實踐。</p>
-            </div>
+            <a href="https://bit.ly/2KIviwm">
+              <img class="img-fluid mx-auto d-block" src="./img/img_index_news01.png">
+              <div class="card-body mx-auto" style="max-width:320px;">
+                <h5 class="card-title text-topic" style="max-width: 300px;">無人機外送到你家</h5>
+                <p class="card-text service-text">為了讓物流運輸更具效率，無人載具的物流運 輸路網立體化已開始逐步實踐。</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 ">
+            <a href="https://bit.ly/2WzajyY">
+              <img class="img-fluid mx-auto d-block" src="./img/img_index_news02.png" alt="Card image cap">
+              <div class="card-body mx-auto" style="max-width:320px;">
+                <h5 class="card-title text-topic" style="max-width: 300px;">無人機學科知識大補帖</h5>
+                <p class="card-text service-text">民航局學科考試高答錯率－航管通知有飛機要進場，如何靠跑道辨認無人機該迴避的方位呢？</p>
+              </div>
+            </a>
           </div>
           <div class="col-sm-12 col-md-4 col-lg-4">
-            <img class="img-fluid" src="./img/img_index_news02.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-topic">無人機學科知識大補帖</h5>
-              <p class="card-text service-text">⺠航局學科考試高答錯率 - 航管通知有飛機要 進場，如何靠跑道辨認無人機該迴避的方...</p>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4">
-            <img class="img-fluid" src="./img/img_index_news03.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title text-topic">超進化無人機與空中計程車</h5>
-              <p class="card-text service-text"> 無人機將朝載重更重、距離更遠的發展方向邁進。</p>
-            </div>
+            <a href="https://bit.ly/3h4lGIq">
+              <img class="img-fluid mx-auto d-block" src="./img/img_index_news03.png" alt="Card image cap">
+              <div class="card-body mx-auto" style="max-width:320px;">
+                <h5 class="card-title text-topic" style="max-width: 300px;">超進化無人機與空中計程車</h5>
+                <p class="card-text service-text">無人機將朝載重更重、距離更遠的發展方向邁進。</p>
+              </div>
+            </a>
 
           </div>
         </div>
@@ -154,22 +171,33 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-1"></div>
-          <div class="col-11">
+          <div class="col-lg-11">
             <div class="row">
               <div class="col-12 col-sm-12">
                 <img src="./img/logo橫-b.png" class="mb-3">
               </div>
-              <div class="col-10 col-lg-5 col-sm-12">
-                <p class="service-text" style="color: rgba(27, 65, 0, 1);">info@flyadvisor.xyz</p>
-                <p class="service-text" style="color: rgba(27, 65, 0, 1);">臺北市內湖區洲子街 12 號 2 樓 @臺北創新實驗室</p>
+              <div class="col-10 col-lg-5 col-sm-6">
+                <a href="mailto:info@flyadvisor.xyz">
+                  <p class="service-text" style="color: rgba(27, 65, 0, 1);">info@flyadvisor.xyz</p>
+                </a>
+                <a href="https://goo.gl/maps/EPhq67C7RP5ym5cX7">
+                  <p class="service-text" style="color: rgba(27, 65, 0, 1);">臺北市內湖區洲子街 12 號 2 樓</br> @臺北創新實驗室</p>
+                </a>
               </div>
-              <div class="offset-lg-4 col-lg-2 col-sm-12">
-                <p class="service-text align-right" style="color: rgba(27, 65, 0, 1);">網站服務條款</p>
-                <p class="service-text align-right" style="color: rgba(27, 65, 0, 1);">隱私權政策</p>
+              <div class="offset-lg-4 col-lg-2 col-md-6">
+                <a href="http://www.flyadvisor.xyz/home/serviceterm">
+                  <p class="service-text align-right" style="color: rgba(27, 65, 0, 1);">網站服務條款</p>
+                </a>
+                <a href="http://www.flyadvisor.xyz/home/privacypolicy">
+                  <p class="service-text align-right" style="color: rgba(27, 65, 0, 1);">隱私權政策</p>
+                </a>
               </div>
               <div class="col-md-12 col-lg-11 border border-secondary"></div>
-              <p class=" footer-text mt-2">彥宣智能科技 iSelect Intelligent Technology Co., Ltd © 2020 iSelect Intelligent
-                Technology. All rights reserved.</p>
+              <p class=" col-md-12 col-lg-11 footer-text mt-2">彥宣智能科技 iSelect Intelligent Technology </br>Co., Ltd ©
+                2020 iSelect
+                Intelligent
+                Technology.</br> All rights reserved.</p>
+
             </div>
 
             <p></p>
@@ -198,26 +226,36 @@
         if ($(this).scrollTop() > 80) {
           //$('#navbar_top').addClass("fixed-top");
           // add padding top to show content behind navbar
-          //$('body').css('padding-top', $('.navbar').outerHeight() + 'px');
-        } 
-        else if($(this).scrollTop()==0){
-
-        }
-        else {
-         // $('#navbar_top').removeClass("fixed-top");
+          $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
+          $('#navbar_top').removeClass("bg-transparent");
+          $('#navbar_top').addClass("nav-color");
           // remove padding top from body
-          //$('body').css('padding-top', '0');
+          $('body').css('padding-top', '0');
+        }
+        else if ($(this).scrollTop() == 0) {
+          $('#navbar_top').removeClass("nav-color");
+          $('#navbar_top').addClass("bg-transparent");
+          // remove padding top from body
+          $('body').css('padding-top', '0');
         }
       });
-      //}
-
-      //rwd hero
-      $(".hero-image").css({ height: $(window).height() + "px" });
-
-      $(window).on("resize", function () {
-        $(".hero-image").css({ height: $(window).height() + "px" });
+      //add black overlay on 
+      $('#main_nav').on('show.bs.collapse', function () {
+        $('#navbar_top').removeClass("bg-transparent");
+        $('#navbar_top').addClass("nav-color");
+        document.getElementById("overlay").style.display = "block";
       });
-      $
+      $('#main_nav').on('hide.bs.collapse', function () {
+        $('#navbar_top').removeClass("nav-color");
+        $('#navbar_top').addClass("bg-transparent");
+        document.getElementById("overlay").style.display = "none";
+      });
+
+      function off() {
+        $('#main_nav').collapse('hide');
+
+      }
+
     </script>
 </body>
 
