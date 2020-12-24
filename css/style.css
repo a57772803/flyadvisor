@@ -3,6 +3,9 @@
 * {
     font-family: 'Noto Sans TC', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 body,
 html {
@@ -49,11 +52,13 @@ ul>li {
 
 .hero {
     background-image: url("../img/img_index-hero-d.png");
-    background-size: contain;
+    background-size:contain;
     background-repeat: no-repeat;
-    width: 100%;
+    width:calc(100% + 30px);
     height: 0;
     padding-top: 40.27%;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .service-text {
@@ -103,7 +108,8 @@ ul>li {
     /* Gray-100 */
     background: #64796E;
     display: table; 
-    margin-top:-40px;
+    margin-top:-44px;
+    margin-left:1.25vw;
     z-index:1;
     position: absolute;
 }
@@ -138,7 +144,7 @@ display: table-cell;
     }
     .hero-text {
         position: absolute;
-        top: 30vh;
+        top: 22vh;
         text-align: left;
         color: white;
     }
@@ -149,7 +155,6 @@ display: table-cell;
 
     .hero-text>h1 {
         font-size: 40px;
-        width: 320px;
         line-height: 59px;
         font-style: normal;
         font-weight: bold;
@@ -161,7 +166,6 @@ display: table-cell;
 
     .hero-text>p {
         font-size: 22px;
-        width: 320px;
         line-height: 36px;
         font-style: normal;
         font-weight: bold;
@@ -172,11 +176,10 @@ display: table-cell;
 
     .hero {
         background-image: url("../img/img_index-hero-m.png");
-        background-size: contain;
+        background-size:contain;
         background-repeat: no-repeat;
-        width: 100%;
-        height: 0;
-        padding-top: 154%;
+        width: calc(100% + 30px);
+        padding-top: 144%;
     }
 
     .service-title {
@@ -184,23 +187,21 @@ display: table-cell;
         font-weight: bold;
         font-size: 30px;
         line-height: 44px;
-        display: flex;
-        align-items: flex-end;
 
     }
 
     .about-us {
-        margin-top: -20vh;
-        width: 345px;
+        margin-top: -30vh;
+        width: calc(100vw - 15px);
         background: #FFFFFF;
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
     }
     .about-us>h2{
-        width: 305px;
+        width:calc(100vw - 40px);
     
     }
     .about-us>p{
-        width: 305px;
+        width:calc(100vw - 40px);
     
     }
 
@@ -216,7 +217,7 @@ display: table-cell;
     .hero-text>h1 {
         font-size: 40px;
         width:321px;
-        line-height: 80px;
+        line-height: 58px;
         font-style: normal;
         font-weight: bold;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
@@ -236,7 +237,7 @@ display: table-cell;
     }
     .about-us {
         margin-top: -8vh;
-        width: 345px;
+        width: calc(100vw - 15px);
         background: #FFFFFF;
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
     }
@@ -255,15 +256,6 @@ display: table-cell;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         /* identical to box height */
     }
-    
-    .nav-FB {
-        margin-right: 20px;
-    }
-
-    .nav-IG{
-    margin-right:4vw;
-    }
-
 
     br {
         display: none;
@@ -288,7 +280,7 @@ display: table-cell;
 
 
     .nav-brand {
-        margin-left: 6vw;
+        margin-left: 4vw;
         margin-top: -2px;
     }
 
@@ -300,6 +292,7 @@ display: table-cell;
     }
 
     .about-us {
+        margin-top:-2vh;
         width: 582px;
         height: 359px;
         background: #FFFFFF;
@@ -324,7 +317,15 @@ display: table-cell;
         text-align: right;
     }
 }
-
+@media(min-width:992px){
+    .about-us {
+        margin-top: -12vh;
+        width: 582px;
+        height: 359px;
+        background: #FFFFFF;
+        filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+    }
+}
 
 @media (min-width: 1200px) {
 
@@ -357,7 +358,7 @@ display: table-cell;
 
     }
     .about-us {
-        margin-top: -20vh;
+        margin-top: calc(-18vh - 40px);
         width: 582px;
         height: 359px;
         background: #FFFFFF;
