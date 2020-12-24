@@ -11,6 +11,17 @@ body,
 html {
     height: 100%;
 }
+#aboutus:target:before {
+    content:"";
+    display:block;
+    height:33vh; /* fixed header height*/
+    margin:-33vh 0 0; /* negative fixed header height */
+    }
+
+#service,#news:target{
+    padding-top:73px;
+    margin-top: -73px;
+}
 
 #overlay {
     display: none;
@@ -69,6 +80,30 @@ ul>li {
     color: rgba(100, 121, 110, 1);
 }
 
+.text-topic {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1B4100;
+}
+.card-topic{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1B4100;
+    padding-left:1.25vw;
+}
+.card-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(100, 121, 110, 1);
+    padding-left:1.25vw;
+}
+
 .service-title {
     font-style: normal;
     font-weight: bold;
@@ -79,14 +114,7 @@ ul>li {
 
 }
 
-.text-topic {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
-    color: #1B4100;
 
-}
 
 .footer-text {
     height: 32px;
@@ -267,14 +295,16 @@ display: table-cell;
         font-style: normal;
         font-weight: bold;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+        padding-left:8.5vw;
     }
 
     .hero-text>p {
         font-size: 24px;
-        width: 650px;
         line-height: 36px;
         font-style: normal;
         font-weight: bold;
+        padding-left:8.5vw;
+        padding-right:8.5vw;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
     }
 
@@ -289,6 +319,7 @@ display: table-cell;
         top: 7vh;
         text-align: left;
         color: white;
+        
     }
 
     .about-us {
@@ -332,6 +363,7 @@ display: table-cell;
 
     .hero-text {
         top: 18vh;
+        left: 0;
         text-align: left;
         color: white;
     }
@@ -339,6 +371,7 @@ display: table-cell;
     .hero-text>h1 {
         font-size: 59px;
         line-height: 80px;
+        width:1000px;
         font-style: normal;
         font-weight: bold;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
@@ -346,8 +379,8 @@ display: table-cell;
 
     .hero-text>p {
         font-size: 24px;
-        width: 650px;
         line-height: 36px;
+        max-width:1150px;
         font-style: normal;
         font-weight: bold;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
