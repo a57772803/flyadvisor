@@ -3,23 +3,28 @@
 * {
     font-family: 'Noto Sans TC', sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body,
 html {
     height: 100%;
 }
-#aboutus:target:before {
-    content:"";
-    display:block;
-    height:33vh; /* fixed header height*/
-    margin:-33vh 0 0; /* negative fixed header height */
-    }
 
-#service,#news:target{
-    padding-top:73px;
+#aboutus:target:before {
+    content: "";
+    display: block;
+    height: 33vh;
+    /* fixed header height*/
+    margin: -33vh 0 0;
+    /* negative fixed header height */
+}
+
+#service,
+#news:target {
+    padding-top: 73px;
     margin-top: -73px;
 }
 
@@ -63,9 +68,9 @@ ul>li {
 
 .hero {
     background-image: url("../img/img_index-hero-d.png");
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
-    width:calc(100% + 30px);
+    width: calc(100% + 30px);
     height: 0;
     padding-top: 40.27%;
     padding-right: 0;
@@ -87,21 +92,23 @@ ul>li {
     line-height: 36px;
     color: #1B4100;
 }
-.card-topic{
+
+.card-topic {
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
     color: #1B4100;
-    padding-left:1.25vw;
+    padding-left: 1.25vw;
 }
-.card-text{
+
+.card-text {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 32px;
     color: rgba(100, 121, 110, 1);
-    padding-left:1.25vw;
+    padding-left: 1.25vw;
 }
 
 .service-title {
@@ -130,28 +137,29 @@ ul>li {
     border: 1px solid #64796E;
 }
 
-.time{
+.time {
     width: 119px;
     height: 38px;
     /* Gray-100 */
     background: #64796E;
-    display: table; 
-    margin-top:-44px;
-    margin-left:1.25vw;
-    z-index:1;
+    display: table;
+    margin-top: -44px;
+    margin-left: 1.25vw;
+    z-index: 1;
     position: absolute;
 }
-.time p{
-    color: white;
-width: 79px;
-height: 22px;
 
-/* Brand / info */
-font-size: 15px;
-line-height: 22px;
-text-align:center; 
-vertical-align: middle;
-display: table-cell; 
+.time p {
+    color: white;
+    width: 79px;
+    height: 22px;
+
+    /* Brand / info */
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 
@@ -170,15 +178,17 @@ display: table-cell;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         /* identical to box height */
     }
+
     .hero-text {
         position: absolute;
         top: 22vh;
         text-align: left;
         color: white;
     }
-    .nav-FB{
-    margin-right:15px;
-    margin-bottom:12px;
+
+    .nav-FB {
+        margin-right: 15px;
+        margin-bottom: 12px;
     }
 
     .hero-text>h1 {
@@ -204,7 +214,7 @@ display: table-cell;
 
     .hero {
         background-image: url("../img/img_index-hero-m.png");
-        background-size:contain;
+        background-size: contain;
         background-repeat: no-repeat;
         width: calc(100% + 30px);
         padding-top: 144%;
@@ -224,32 +234,36 @@ display: table-cell;
         background: #FFFFFF;
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
     }
-    .about-us>h2{
-        width:calc(100vw - 90px);
-    
+
+    .about-us>h2 {
+        width: calc(100vw - 90px);
+
     }
-    .about-us>p{
-        width:calc(100vw - 90px);
-    
+
+    .about-us>p {
+        width: calc(100vw - 90px);
+
     }
 
 
 }
-@media(max-width: 480px){
+
+@media(max-width: 480px) {
     .hero-text {
         position: absolute;
         top: 15vh;
         text-align: left;
         color: white;
     }
+
     .hero-text>h1 {
         font-size: 40px;
-        width:321px;
+        width: 321px;
         line-height: 58px;
         font-style: normal;
         font-weight: bold;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
-        margin-left:auto;
+        margin-left: auto;
         margin-right: auto;
     }
 
@@ -259,10 +273,11 @@ display: table-cell;
         line-height: 36px;
         font-style: normal;
         font-weight: bold;
-        margin-left:auto;
+        margin-left: auto;
         margin-right: auto;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
     }
+
     .about-us {
         margin-top: -8vh;
         width: calc(100vw - 15px);
@@ -295,7 +310,7 @@ display: table-cell;
         font-style: normal;
         font-weight: bold;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
-        padding-left:8.5vw;
+        padding-left: 8.5vw;
     }
 
     .hero-text>p {
@@ -303,41 +318,43 @@ display: table-cell;
         line-height: 36px;
         font-style: normal;
         font-weight: bold;
-        padding-left:8.5vw;
-        padding-right:8.5vw;
+        padding-left: 8.5vw;
+        padding-right: 8.5vw;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
     }
 
 
     .nav-brand {
+        height: 80px;
         margin-left: 4vw;
-        margin-top: -2px;
+        margin-top: -10px;
     }
 
     .hero-text {
         position: absolute;
-        top: 7vh;
+        top: 8vh;
         text-align: left;
         color: white;
-        
+
     }
 
     .about-us {
-        margin-top:-2vh;
+        margin-top: -2vh;
         width: 582px;
         height: 359px;
         background: #FFFFFF;
         filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
     }
 
-.about-us>h2{
-    width: 462px;
+    .about-us>h2 {
+        width: 462px;
 
-}
-.about-us>p{
-    width: 462px;
+    }
 
-}
+    .about-us>p {
+        width: 462px;
+
+    }
 
     .nav-icon {
         margin-left: 3vw;
@@ -348,7 +365,13 @@ display: table-cell;
         text-align: right;
     }
 }
-@media(min-width:992px){
+#footer p{
+margin-bottom: 4px !important;
+
+}
+
+
+@media(min-width:992px) {
     .about-us {
         margin-top: -12vh;
         width: 582px;
@@ -379,7 +402,7 @@ display: table-cell;
     .hero-text>p {
         font-size: 24px;
         line-height: 36px;
-        max-width:1150px;
+        max-width: 1150px;
         font-style: normal;
         font-weight: bold;
         text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
@@ -389,6 +412,7 @@ display: table-cell;
         text-align: center;
 
     }
+
     .about-us {
         margin-top: calc(-18vh - 40px);
         width: 582px;
