@@ -13,7 +13,7 @@ html {
     height: 100%;
 }
 
-#aboutus:target:before {
+#course:target:before,#management:target:before{
     content: "";
     display: block;
     height: 33vh;
@@ -270,7 +270,11 @@ iframe {
     }
 
     .carousel-title {
-        margin-top: calc(-70vh + 30%);
+        margin-top: calc(-90vh);
+    }
+    .introduct-title {
+        margin-top: calc(-70vh);
+
     }
 
 
@@ -311,7 +315,7 @@ iframe {
     }
 
     .carousel-title {
-        margin-top: calc(-50vh + 45%);
+        margin-top: calc(-50vh + 10%);
     }
 
     iframe {
@@ -397,16 +401,16 @@ iframe {
         .align-right {
             text-align: right;
         }
-
-
-
-
         #footer p {
             margin-bottom: 4px !important;
         }
 
         .carousel-title {
-            margin-top: calc(-90vh);
+            margin-top: calc(-50vh + 20%);
+        }
+        .introduct-title {
+            margin-top: calc(-55vh + 15%);
+    
         }
     }
 
@@ -420,6 +424,7 @@ iframe {
         .carousel-title {
             margin-top: calc(-30vh);
         }
+
     }
 
     @media (min-width: 1200px) {
@@ -460,7 +465,11 @@ iframe {
         }
 
         .carousel-title {
-            margin-top: calc(-35vh);
+            margin-top: calc(-40vh);
+        }
+        .introduct-title {
+            margin-top: calc(-70vh);
+    
         }
 
     }

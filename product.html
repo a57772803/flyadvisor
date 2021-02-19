@@ -63,38 +63,49 @@
 
 
         <!---->
-        <div class="row carousel-title" id="aboutus">
+        <div class="row carousel-title">
             <div class="col-12 col-md-12  col-lg-12  text-center mb-md-3 mb-lg-4">
                 <h1 class="product-title">一句話作為產品頁面的標題</h1>
             </div>
             <div
                 class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
-                <div id="carouselExampleControls" class="carousel slide slider" data-ride="carousel">
+                <div id="carousel" class="carousel slide slider" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
                     <div class="carousel-inner">
+
                         <div class="carousel-item active">
+                            <a  href="#course">
                             <picture>
-                                <source media="(min-width:768px)" srcset="./img/product/A1-d.png">
-                                <img class="img img-fluid" src="./img/product/A1-m.png" alt="">
-                            </picture>
+                                <source media="(min-width:768px)" srcset="./img/product/Slider-d01.png">
+                                <img class="img" src="./img/product/Slider-m01.png" alt="">
+                            </picture></a>
                         </div>
                         <div class="carousel-item">
+                            <a  href="#management">
                             <picture>
-                                <source media="(min-width:768px)" srcset="./img/product/A2-d.png">
-                                <img class="img img-fluid" src="./img/product/A2-m.png" alt="">
+                                <source media="(min-width:768px)" srcset="./img/product/Slider-d02.png">
+                                <img class="img" src="./img/product/Slider-m02.png" alt="">
                             </picture>
+                        </a>
                         </div>
                         <div class="carousel-item">
+                            <a  href="https://www.google.com/?hl=zh_tw" target="_blank">
                             <picture>
-                                <source media="(min-width:768px)" srcset="./img/product/B1-d.png">
-                                <img class="img img-fluid" src="./img/product/B1-m.png" alt="">
+                                <source media="(min-width:768px)" srcset="./img/product/Slider-d03.png">
+                                <img class="img img-fluid" src="./img/product/Slider-m03.png" alt="">
                             </picture>
+                        </a>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -106,7 +117,7 @@
             <div class="col-12 col-md-12 col-xl-12 text-center text-topic mt-3 mb-3 mb-lg-5">主要段落標題標題</div>
             <div
                 class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
-                <iframe  src="https://www.youtube.com/embed/ZvtGm841x9g"
+                <iframe src="https://www.youtube.com/embed/ZvtGm841x9g"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -132,14 +143,14 @@
         <div class="row mb-5">
             <div class="col-xl-2 col-lg-2"></div>
             <div class="col-12 col-md-12 col-xl-8 col-lg-8">
-                <h3 class="text-topic" >商品一覽</h3>
+                <h3 class="text-topic">商品一覽</h3>
                 <script async
                     src="https://api.piececart.com/jsapi/store/js?storeId=1309&apiKey=aa74363eda41483691cc55f12ca76211"></script>
             </div>
             <div class="col-xl-2 col-lg-2"></div>
         </div>
         <!--課程商品銷售標題標題-->
-        <div class="row">
+        <div class="row" id="course">
             <picture>
                 <source media="(min-width:768px)" srcset="./img/product/img_bg_product01-d_slice.png">
                 <img class="img img-fluid" src="./img/product/img_bg_product01-m_slice.png" alt="">
@@ -153,13 +164,14 @@
             <div class="col-12 col-md-12  col-lg-12  text-center mb-md-5 mb-lg-4">
                 <h1 class="sales-topic">課程商品銷售標題標題</h1>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+            <div
+                class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
                 <picture>
                     <source media="(min-width:768px)" srcset="./img/product/A2-d.png">
                     <img class="img img-fluid" src="./img/product/A2-m.png" alt="">
                 </picture>
             </div>
-            <div class="col-12" style="background:rgba(230,245,238); height:30px;" ></div>
+            <div class="col-12" style="background:rgba(230,245,238); height:30px;"></div>
         </div>
         <!--圖文2-->
         <div class="row" style="background:rgba(230,245,238)">
@@ -180,7 +192,7 @@
             <div class="col-xl-2 col-lg-2 order-lg-3 p-0"></div>
         </div>
         <!--飛航營運管理標題-->
-        <div class="row">
+        <div class="row" id="management">
             <picture>
                 <source media="(min-width:768px)" srcset="./img/product/img_bg_product02-d_slice.png">
                 <img class="img img-fluid" src="./img/product/img_bg_product02-m_slice.png" alt="">
@@ -195,7 +207,8 @@
             <div class="col-12 col-md-12  col-lg-12  text-center mb-md-5 mb-lg-4">
                 <h1 class="sales-topic">飛航營運管理標題</h1>
             </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+            <div
+                class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
                 <picture>
                     <source media="(min-width:768px)" srcset="./img/product/B1-d.png">
                     <img class="img img-fluid" src="./img/product/B1-m.png" alt="">
@@ -300,6 +313,9 @@
                 $('#main_nav').collapse('hide');
 
             }
+            $('#carouselExampleControls').carousel({
+                interval: 3000
+            })
 
         </script>
 </body>
