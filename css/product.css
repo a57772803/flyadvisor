@@ -13,7 +13,8 @@ html {
     height: 100%;
 }
 
-#course:target:before,#management:target:before{
+#course:target:before,
+#management:target:before {
     content: "";
     display: block;
     height: 33vh;
@@ -43,7 +44,7 @@ html {
     opacity: 0.5;
 }
 
-hr {
+a {
     border-width: medium;
     color: black;
 }
@@ -177,17 +178,23 @@ ul>li {
     line-height: 53px;
     text-align: center;
     letter-spacing: 0.2em;
-    color: #FFFFFF;
 }
 
 iframe {
-    width: 45vw;
+    width: 55vw;
     height: 50vh;
 }
 
 .introduct-title {
     margin-top: calc(-60vh + 20%);
 }
+
+.article-spacing {
+    display: flex;
+    width: 15.6vw;
+}
+
+
 
 
 @media (max-width: 767px) {
@@ -270,13 +277,23 @@ iframe {
     }
 
     .carousel-title {
-        margin-top: calc(-90vh);
+        margin-top: calc(-55vh);
     }
+
     .introduct-title {
-        margin-top: calc(-70vh);
+        margin-top: calc(-55vh + 10%);
 
     }
 
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .article-spacing {
+        display: flex;
+        width: 0;
+    }
 
 }
 
@@ -315,161 +332,161 @@ iframe {
     }
 
     .carousel-title {
-        margin-top: calc(-50vh + 10%);
+        margin-top: calc(-35vh);
     }
 
-    iframe {
-        width: 345px;
-        height: auto;
-    }
+
 
     .introduct-title {
-        margin-top: calc(-40vh + 40%);
+        margin-top: calc(-40vh + 15%);
 
     }
 }
 
 
-    @media (min-width: 768px) {
-        .nav-text {
-            width: 100px;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 19px;
-            line-height: 30px;
-            color: white !important;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-            /* identical to box height */
-        }
+@media (min-width: 768px) {
+    .nav-text {
+        width: 100px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 30px;
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        /* identical to box height */
+    }
 
-        br {
-            display: none;
-        }
+    br {
+        display: none;
+    }
 
-        .hero-text>h1 {
-            font-size: 40px;
-            line-height: 80px;
-            font-style: normal;
-            font-weight: bold;
-            text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
-            padding-left: 8.5vw;
-        }
+    .hero-text>h1 {
+        font-size: 40px;
+        line-height: 80px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+        padding-left: 8.5vw;
+    }
 
-        .hero-text>p {
-            font-size: 24px;
-            line-height: 36px;
-            font-style: normal;
-            font-weight: bold;
-            padding-left: 8.5vw;
-            padding-right: 8.5vw;
-            text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
-        }
-
-
-        .nav-brand {
-            margin-top: -2px;
-        }
-
-        .hero-text {
-            position: absolute;
-            top: 8vh;
-            text-align: left;
-            color: white;
-
-        }
-
-        .about-us {
-            width: 582px;
-            height: 359px;
-        }
-
-        .about-us>h2 {
-            width: 462px;
-
-        }
-
-        .about-us>p {
-            width: 462px;
-
-        }
-
-        .nav-icon {
-            margin-left: 3vw;
-            margin-right: 4vw;
-        }
-
-        .align-right {
-            text-align: right;
-        }
-        #footer p {
-            margin-bottom: 4px !important;
-        }
-
-        .carousel-title {
-            margin-top: calc(-50vh + 20%);
-        }
-        .introduct-title {
-            margin-top: calc(-55vh + 15%);
-    
-        }
+    .hero-text>p {
+        font-size: 24px;
+        line-height: 36px;
+        font-style: normal;
+        font-weight: bold;
+        padding-left: 8.5vw;
+        padding-right: 8.5vw;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
     }
 
 
-    @media(min-width:992px) {
-        .about-us {
-            width: 582px;
-            height: 359px;
-        }
+    .nav-brand {
+        margin-top: -2px;
+    }
 
-        .carousel-title {
-            margin-top: calc(-30vh);
-        }
+    .hero-text {
+        position: absolute;
+        top: 8vh;
+        text-align: left;
+        color: white;
 
     }
 
-    @media (min-width: 1200px) {
+    .about-us {
+        width: 582px;
+        height: 359px;
+    }
 
-
-        .hero-text {
-            top: 18vh;
-            left: 0;
-            text-align: left;
-            color: white;
-        }
-
-        .hero-text>h1 {
-            font-size: 59px;
-            line-height: 80px;
-            font-style: normal;
-            font-weight: bold;
-            text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
-        }
-
-        .hero-text>p {
-            font-size: 24px;
-            line-height: 36px;
-            max-width: 1150px;
-            font-style: normal;
-            font-weight: bold;
-            text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
-        }
-
-        .navbar .navbar-collapse {
-            text-align: center;
-
-        }
-
-        .about-us {
-            width: 582px;
-            height: 359px;
-        }
-
-        .carousel-title {
-            margin-top: calc(-40vh);
-        }
-        .introduct-title {
-            margin-top: calc(-70vh);
-    
-        }
+    .about-us>h2 {
+        width: 462px;
 
     }
+
+    .about-us>p {
+        width: 462px;
+
+    }
+
+    .nav-icon {
+        margin-left: 3vw;
+        margin-right: 4vw;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    #footer p {
+        margin-bottom: 4px !important;
+    }
+
+    .carousel-title {
+        margin-top: calc(-40vh + 25%);
+    }
+
+    .introduct-title {
+        margin-top: calc(-45vh);
+
+    }
+}
+
+
+@media(min-width:992px) {
+    .about-us {
+        width: 582px;
+        height: 359px;
+    }
+
+    .carousel-title {
+        margin-top: calc(-30vh);
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+
+    .hero-text {
+        top: 18vh;
+        left: 0;
+        text-align: left;
+        color: white;
+    }
+
+    .hero-text>h1 {
+        font-size: 59px;
+        line-height: 80px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text>p {
+        font-size: 24px;
+        line-height: 36px;
+        max-width: 1150px;
+        font-style: normal;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+
+    }
+
+    .about-us {
+        width: 582px;
+        height: 359px;
+    }
+
+    .carousel-title {
+        margin-top: calc(-40vh + 3%);
+    }
+
+    .introduct-title {
+        margin-top: calc(-60vh + 10%);
+
+    }
+
+}
