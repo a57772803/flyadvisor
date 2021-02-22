@@ -356,9 +356,7 @@ iframe {
         /* identical to box height */
     }
 
-    br {
-        display: none;
-    }
+
 
     .hero-text>h1 {
         font-size: 40px;
@@ -485,7 +483,7 @@ iframe {
     }
 
     .introduct-title {
-        margin-top: calc(-78vh + 8%);
+        margin-top: calc(-77vh + 8%);
 
     }
 
