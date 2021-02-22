@@ -425,7 +425,7 @@ iframe {
     }
 
     .introduct-title {
-        margin-top: calc(-50vh);
+        margin-top: calc(-45vh + 30px);
 
     }
 }
